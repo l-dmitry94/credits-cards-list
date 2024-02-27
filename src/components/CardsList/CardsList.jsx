@@ -4,17 +4,17 @@ import { useState } from 'react';
 import BackSideCard from 'components/BackSideCard';
 
 const CardsList = ({ cards }) => {
-    const [showCvv, setShowCvv] = useState(false);
+    const [selectedCardId, setSelectedCardId] = useState(null);
 
-    const handleClick = () => {
-        setShowCvv(!showCvv);
+    const handleClick = id => {
+        setSelectedCardId(prevId => (prevId === id ? null : id));
     };
 
     return (
         <ul className={css.list}>
-            {cards.map(({ name, number, month, year, cvv }) => (
-                <li key={number} onClick={handleClick}>
-                    {!showCvv ? (
+            {cards.map(({ id, name, number, month, year, cvv }) => (
+                <li key={id} onClick={() => handleClick(id)}>
+                    {selectedCardId !== id ? (
                         <Card
                             name={name}
                             number={number}

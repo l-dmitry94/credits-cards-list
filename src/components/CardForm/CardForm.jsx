@@ -54,6 +54,8 @@ const CardForm = ({ onSubmit }) => {
         onSubmit(info);
 
         setInfo(initialState);
+
+        Notify.success("Card successfully added")
     };
 
     const monthsOptions = months.map(month => ({

@@ -2,13 +2,16 @@ import Home from 'pages/Home';
 import AppBar from './AppBar';
 import Cards from 'pages/Cards';
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 
 const { Routes, Route } = require('react-router-dom');
 
 const App = () => {
     const [cards, setCards] = useState([]);
+    const id = nanoid()
+    
     const onData = card => {
-        setCards([card, ...cards]);
+        setCards([{id, ...card}, ...cards]);
     };
 
     return (
