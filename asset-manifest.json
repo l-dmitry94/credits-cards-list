@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/credits-cards-list/static/css/main.0ca6107b.css",
-    "main.js": "/credits-cards-list/static/js/main.2c7ff6ab.js",
+    "main.js": "/credits-cards-list/static/js/main.d43fa07f.js",
     "index.html": "/credits-cards-list/index.html",
     "main.0ca6107b.css.map": "/credits-cards-list/static/css/main.0ca6107b.css.map",
-    "main.2c7ff6ab.js.map": "/credits-cards-list/static/js/main.2c7ff6ab.js.map"
+    "main.d43fa07f.js.map": "/credits-cards-list/static/js/main.d43fa07f.js.map"
   },
   "entrypoints": [
     "static/css/main.0ca6107b.css",
-    "static/js/main.2c7ff6ab.js"
+    "static/js/main.d43fa07f.js"
   ]
 }
