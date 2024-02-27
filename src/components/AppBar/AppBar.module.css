@@ -1,0 +1,23 @@
+.header {
+    padding: 18px 0 120px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.link {
+    text-transform: uppercase;
+}
+
+.link:global(.active) {
+    font-weight: 700;
+    color: #1c7c1f;
+}

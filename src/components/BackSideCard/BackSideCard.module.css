@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 280px;
+    height: 164px;
+    background-color: #f33514;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.cvv {
+    width: 190px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 0 30px;
+    text-align: right;
+    background-color: #fff;
+}

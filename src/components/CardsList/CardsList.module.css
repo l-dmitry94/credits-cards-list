@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.item {
+    flex-basis: calc((100% - 72px) / 3);
+}

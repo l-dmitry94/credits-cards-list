@@ -1,16 +1,24 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+import Home from 'pages/Home';
+import AppBar from './AppBar';
+import Cards from 'pages/Cards';
+import { useState } from 'react';
+
+const { Routes, Route } = require('react-router-dom');
+
+const App = () => {
+    const [cards, setCards] = useState([]);
+    const onData = card => {
+        setCards([card, ...cards]);
+    };
+
+    return (
+        <Routes>
+            <Route path="/" element={<AppBar />}>
+                <Route index element={<Home onData={onData} />} />
+                <Route path="cards" element={<Cards cards={cards} />} />
+            </Route>
+        </Routes>
+    );
 };
+
+export default App;

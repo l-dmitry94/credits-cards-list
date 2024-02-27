@@ -1,0 +1,35 @@
+.wrapper {
+    width: 280px;
+    height: 164px;
+    background-color: #f33514;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.number {
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+}
+
+.data {
+    color: #fff;
+}
